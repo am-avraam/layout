@@ -1,0 +1,289 @@
+*,
+*::after,
+*::before {
+box-sizing: border-box;
+padding: 0px;
+
+}
+
+body {
+font-family: "Regular";
+font-size: 16px;
+color: #1B1C21;
+margin: 0;
+padding: 0;
+/* background-color: #F8F8F8; */
+}
+
+a {
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.img-btn {
+    background-color: #FF3E79;
+    border-radius: 50%;
+}
+.wrapper {
+background-color: #F8F8F8;
+/* max-width: 1120px;
+margin: 0 auto; */
+}
+
+.header {
+    background-color: white;
+    padding: 16px;
+    width: 100%;
+}
+
+
+.header,
+.header__left,
+.header__right {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.btn:not(:last-child) {
+    margin-right: 16px;
+}
+
+.header__profile {
+    margin-right: 16px;
+}
+
+.btn {
+    border-radius: 50%;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+
+
+
+.header__default .btn:last-child {
+    margin-right: 0;
+} 
+
+
+.header__logo::before {
+content: url("image/divider.svg");
+position: relative;
+margin-right: 16px;
+top: -10px;
+display: none;
+}
+
+.header__hidden {
+    display: none;
+}
+
+.header__repair::before {
+    content: url("image/divider.svg"); 
+    position: relative;
+    margin-right: 12px;
+
+    top: -5px;
+    /* display: inline; */
+    }
+
+.main {
+    padding: 24px 16px;
+}
+
+.main__top-hidden {
+    display: none;
+}
+
+.main__header {
+    position: relative;
+    font-family: bold;
+    margin: 0px;
+}
+
+.main__header::before {
+    content: url('image/highlight.svg');
+    position: absolute;
+    vertical-align: middle;
+    left: -16px;
+}
+
+.main__navigation {
+padding-top: 24px;
+margin-bottom: 16px;
+}
+
+.main__navigation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+}
+
+.main__navigation-item {
+    flex-shrink: 0;
+    color: #7E7E82;
+    border: 2px solid transparent;
+    padding: 8px 9px 8px 16px;
+
+}
+
+.main__navigation-item:hover {
+    background: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    
+}
+
+.intro__text {
+    height: 115px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    margin-bottom: 13px;
+    width: 288px;
+
+}
+
+.intro__more {
+    border: none;
+    background: inherit; 
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Medium";
+    font-size: 16px;
+    margin-bottom: 16px;  
+}
+
+.intro__more::before {
+    content: url('image/expand.svg');
+}
+
+.intro__image {
+    width: 100%;
+    border-radius: 6px;
+
+}
+
+
+@media screen and (min-width: 550px) {
+    .header__hidden {
+        display: block;
+    }
+
+    .header__logo::before {
+        display: inline-block;
+    }
+
+    .intro {
+        display: flex;
+    }
+    .intro__text {
+        width: 250px;
+        margin-right: 40px;
+    }
+
+    .intro__signboard {
+        width: 300px;
+        padding-top: 16px;
+    }
+    .intro__text {
+        width: 290px;
+        margin-right: 40px;
+        height: 140px;
+
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    .intro__text {
+        width: 312px;
+        margin-right: 40px;
+        height: 155px;
+
+    }
+
+    .intro__signboard {
+        width: 400px;
+        padding-top: 16px;
+    }
+
+    .main {
+        padding: 24px 24px;
+    }
+
+    .main__header::before {
+        left: -24px;
+    }
+
+}
+@media screen and (min-width: 1120px) {
+     
+    
+    .intro__text {
+        width: 490px;
+        margin-right: 40px;
+        height: 160px;
+
+    }
+    .main__header::before {
+        left: -34px;
+    }
+
+    .main {
+        padding: 42px 34px;
+    }
+    .header {
+        display: none;
+    }
+    .main__top-hidden {
+        display: block;
+        
+    }
+    .intro__signboard {
+        width: 100%;
+        padding-top: 16px;
+    }
+
+    .main__navigation-list {
+        overflow: hidden;
+        flex-wrap: wrap;
+    
+    }
+    
+    .main__repair,
+    .main__status {
+        position: relative;
+    }
+
+    .main__top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main__repair::before {
+    position: relative;
+    font-family: "Medium";
+    font-size: 16px;
+    content: 'Оставить заявку';
+    top: -15px;
+    left: -5px;
+    }
+
+    .main__status::before {
+        position: relative;
+        font-family: "Medium";
+        /* font-weight: bold; */
+        font-size: 16px;
+        content: 'Статус ремонта';
+        top: -15px;
+        left: -5px;
+        }
+
+}
