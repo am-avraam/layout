@@ -145,7 +145,7 @@ margin: 0 0;
     max-width: 320px;
     /* background-color: greenyellow; */
     padding: 115px 0 0 0;
-    overflow: auto;
+    /* overflow: auto; */
     padding-left: 24px;
 }
 
@@ -206,7 +206,8 @@ filter: drop-shadow(6px 6px 5px #80949F);
     height: 100%;
 }
 
-.header__link:active::before {          /*    зеленая плашка для активного меню     */
+.header__link:active::before,
+.header__link:focus::before {          /*    зеленая плашка для активного меню     */
     content: url('image/highlight.svg');
     position: absolute;  
     left: -23px;
