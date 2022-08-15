@@ -1,4 +1,9 @@
+const dumy = document.querySelector('.dumy-card');
 const slider = document.querySelector(".slider-container");
+
+if (window.innerWidth < 768) {
+   dumy.remove();
+} 
 
 let mySwiper;
 
