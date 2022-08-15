@@ -24,8 +24,6 @@ a {
     background-color: #FF3E79;
     border-radius: 50%;
 }
-
-
 .wrapper {
 background-color: #F8F8F8;
 max-width: 1120px;
@@ -218,11 +216,10 @@ margin-bottom: 16px;
     justify-content: space-evenly;
 }
 
- .dumy-card {
-    visibility: hidden; 
-    
-} 
+.dumy-card {
+    visibility: hidden;
 
+}
 
 .slider-container {
     width: 100%;

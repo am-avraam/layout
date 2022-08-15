@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style-burger.css">
+    <link rel="stylesheet" href="fonts.css">
+    <title>мобильное Меню-бургер</title>
+</head>
+<body>
+    <div class="wrapper">
+       <header class="header">
+            <div class="header__body">
+
+                <div class="header__left">
+                    <div class="header__burger active">    <!-- бургер сразу активный -->
+                        <span></span> 
+                    </div>
+                    <nav class="header__menu active">       <!--меню сразу активно -->
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#" class="header__link">Ремонт техники</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Услуги и сервисы</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Корпоративным клиентам</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Продавцам техники</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Партнерам</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Производителям</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Наши сервисные центры</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link">Контакты</a>
+                            </li>
+                            
+                        </ul>
+                        <div class="header__hidden">
+                            <button class="header__call btn"><img class="img-btn" src="image/call.svg" alt="call"></button>
+                            <button class="header__chat btn"><img class="img-btn" src="image/chat.svg" alt="chat"></button>
+                            <button class="header__profile btn"> <img class="img-btn" src="image/profile.svg" alt="сheck status"> </button>	
+                        </div>
+                        <div class="header__contacts">
+                            <div class="header__email">
+                                <a href="mailto:mail@cps.com">mail@cps.com</a>
+                            </div>
+                            <div class="header__phone">
+                                <a href="tel:+78008908900">8 800 890 8900</a>
+                            </div>
+                        </div>
+                        <div class="header__language">
+                            <span class="header__langvar" title="Russian">
+                                <a class="langvar active" lang="ru" href="#">RU</a>
+                            </span>    
+                            <span class="header__langvar" title="English">
+                                <a class="langvar" lang="en" href="source">EN</a>
+                            </span> 
+                            <span class="header__langvar" title="Chinese">
+                                <a class="langvar" lang="ch" href="source">CH</a>
+                            </span> 
+                            
+                        </div>
+
+                        
+                    </nav>
+                    <a class="header__logo btn" href="#"> <img src="image/Group.svg" alt="logo"> </a> 
+                </div>
+
+                <div class="header__right">
+                    <div class="header__default">
+                        <button class="header__repair btn">
+                            <img class="img-btn" src="image/repair.svg" alt="repair">
+                        </button>	
+                        <button class="header__check btn"> <img class="img-btn" src="image/checkstatus.svg" alt="сheck status"> </button>
+                    </div>
+                
+                </div>
+
+            </div>
+       </header>  
+     </div> 
+       
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/script_burger.js"></script>
+</body>
+</html>
